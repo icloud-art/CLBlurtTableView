@@ -37,11 +37,13 @@
 
 @implementation CLBlurtView
 
-- (instancetype)initWithFrame:(CGRect)frame WithHeaderImgHeight:(CGFloat)headerImgHeight iconHeight:(CGFloat)iconHeight{
+- (instancetype)initWithFrame:(CGRect)frame WithHeaderImgHeight:(CGFloat)headerImgHeight iconHeight:(CGFloat)iconHeight selectBlock:(SelectRowAction)block {
     if (self = [super initWithFrame:frame]) {
         self.headerImgHeight = (headerImgHeight == 0  ? self.frame.size.height * 0.382 : headerImgHeight);
         self.iconHeight = (iconHeight == 0  ? self.frame.size.height * 0.382  : iconHeight);
         [self setupContentView];
+        selectAction = block;
+        
     }
     return self;
 }
@@ -120,6 +122,9 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    selectAction(indexPath);
+}
 
 #pragma mark - UIScrollViewDelgate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

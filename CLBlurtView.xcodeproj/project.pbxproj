@@ -11,9 +11,6 @@
 		5625BEA71C2A7314000011A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEA61C2A7314000011A2 /* AppDelegate.m */; };
 		5625BEAA1C2A7314000011A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEA91C2A7314000011A2 /* ViewController.m */; };
 		5625BEAF1C2A7314000011A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5625BEAE1C2A7314000011A2 /* Assets.xcassets */; };
-		5625BEC11C2A761C000011A2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5625BEBA1C2A761C000011A2 /* 1.jpg */; };
-		5625BEC21C2A761C000011A2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5625BEBB1C2A761C000011A2 /* 2.jpg */; };
-		5625BEC31C2A761C000011A2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5625BEBC1C2A761C000011A2 /* 3.jpg */; };
 		5625BEC41C2A761C000011A2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEBE1C2A761C000011A2 /* UIImage+ImageEffects.m */; };
 		5625BEC51C2A761C000011A2 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEC01C2A761C000011A2 /* UIImageView+LBBlurredImage.m */; };
 		5625BEE81C2A76AE000011A2 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEC81C2A76AE000011A2 /* MKAnnotationView+WebCache.m */; };
@@ -33,6 +30,7 @@
 		5625BEF61C2A76AE000011A2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEE51C2A76AE000011A2 /* UIImageView+WebCache.m */; };
 		5625BEF71C2A76AE000011A2 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEE71C2A76AE000011A2 /* UIView+WebCacheOperation.m */; };
 		5625BEFA1C2A76E1000011A2 /* CLBlurtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625BEF91C2A76E1000011A2 /* CLBlurtView.m */; };
+		5625BF0C1C2A9D14000011A2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5625BF0B1C2A9D14000011A2 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +42,6 @@
 		5625BEA91C2A7314000011A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5625BEAE1C2A7314000011A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5625BEB31C2A7314000011A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5625BEBA1C2A761C000011A2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		5625BEBB1C2A761C000011A2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		5625BEBC1C2A761C000011A2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		5625BEBD1C2A761C000011A2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		5625BEBE1C2A761C000011A2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		5625BEBF1C2A761C000011A2 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
@@ -86,6 +81,7 @@
 		5625BEE71C2A76AE000011A2 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		5625BEF81C2A76E1000011A2 /* CLBlurtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlurtView.h; sourceTree = "<group>"; };
 		5625BEF91C2A76E1000011A2 /* CLBlurtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlurtView.m; sourceTree = "<group>"; };
+		5625BF0B1C2A9D14000011A2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +140,7 @@
 		5625BEB91C2A761C000011A2 /* LBBlurredImage */ = {
 			isa = PBXGroup;
 			children = (
-				5625BEBA1C2A761C000011A2 /* 1.jpg */,
-				5625BEBB1C2A761C000011A2 /* 2.jpg */,
-				5625BEBC1C2A761C000011A2 /* 3.jpg */,
+				5625BF0A1C2A9D14000011A2 /* images */,
 				5625BEBD1C2A761C000011A2 /* UIImage+ImageEffects.h */,
 				5625BEBE1C2A761C000011A2 /* UIImage+ImageEffects.m */,
 				5625BEBF1C2A761C000011A2 /* UIImageView+LBBlurredImage.h */,
@@ -193,6 +187,14 @@
 				5625BEE71C2A76AE000011A2 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		5625BF0A1C2A9D14000011A2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5625BF0B1C2A9D14000011A2 /* 1.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5625BEC21C2A761C000011A2 /* 2.jpg in Resources */,
 				5625BEAF1C2A7314000011A2 /* Assets.xcassets in Resources */,
-				5625BEC11C2A761C000011A2 /* 1.jpg in Resources */,
-				5625BEC31C2A761C000011A2 /* 3.jpg in Resources */,
+				5625BF0C1C2A9D14000011A2 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

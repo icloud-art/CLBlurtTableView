@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^SelectRowAction)(NSIndexPath *);
+
 @interface CLBlurtView : UIView
+{
+    SelectRowAction selectAction;
+}
 @property (nonatomic,assign)CGFloat headerImgHeight;
 @property (nonatomic,assign)CGFloat iconHeight;
 /**
@@ -17,6 +22,6 @@
 @property (nonatomic,copy)NSString *imgUrl;
 @property (nonatomic,copy)NSString *name;
 
+- (instancetype)initWithFrame:(CGRect)frame WithHeaderImgHeight:(CGFloat)headerImgHeight iconHeight:(CGFloat)iconHeight selectBlock:(SelectRowAction)block;
 
-- (instancetype)initWithFrame:(CGRect)frame WithHeaderImgHeight:(CGFloat)headerImgHeight iconHeight:(CGFloat)iconHeight;
 @end

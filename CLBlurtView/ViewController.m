@@ -20,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    CLBlurtView *b = [[CLBlurtView alloc] initWithFrame:self.view.frame WithHeaderImgHeight:200 iconHeight:100];
-    
+    CLBlurtView *b = [[CLBlurtView alloc] initWithFrame:self.view.frame WithHeaderImgHeight:200 iconHeight:100 selectBlock:^(NSIndexPath *indexPath) {
+        NSLog(@"indexpath.row is %zi indexpath.section is %zi",indexPath.row,indexPath.section);
+    }];
     [self.view addSubview:b];
 
 }
