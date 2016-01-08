@@ -105,7 +105,7 @@
 #pragma mark -UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return 20;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -145,13 +145,24 @@
         self.headImage.clipsToBounds = YES;
         
         self.label.frame = CGRectMake(self.label.frame.origin.x, CGRectGetMaxY(self.headImage.frame) + 10, self.label.frame.size.width, self.label.frame.size.height);
-        
+        if (scrollView.contentOffset.y > -64) {
+            [UIView animateWithDuration:0.35 animations:^{
+                self.superVC.navigationController.navigationBar.frame = CGRectMake(0, -64, self.frame.size.width, 64);
+            }];
+        }
+
     } else {
         // 只拉伸高度
         self.imageView.frame = CGRectMake(0, 0, self.imageView.frame.size.width, 200 - scrollView.contentOffset.y);
+        [UIView animateWithDuration:0.35 animations:^{
+            if (scrollView.contentOffset.y > 64) {
+                self.superVC.navigationController.navigationBarHidden = NO;
+                self.superVC.navigationController.navigationBar.frame = CGRectMake(0, 0, self.frame.size.width, 64);
+                [[UINavigationBar appearance] setTintColor:[UIColor colorWithWhite:0.0 alpha:0.5]];
+            }
+        }];
     }
-    
-    NSLog(@"%0.0f",scrollView.contentOffset.y);
+    NSLog(@"offset is:%0.0f",scrollView.contentOffset.y);
 }
 
 

@@ -21,7 +21,7 @@ typedef void (^SelectRowAction)(NSIndexPath *);
  */
 @property (nonatomic,copy)NSString *imgUrl;
 @property (nonatomic,copy)NSString *name;
-
+@property (nonatomic,strong) UIViewController * superVC;
 - (instancetype)initWithFrame:(CGRect)frame WithHeaderImgHeight:(CGFloat)headerImgHeight iconHeight:(CGFloat)iconHeight selectBlock:(SelectRowAction)block;
 
 @end

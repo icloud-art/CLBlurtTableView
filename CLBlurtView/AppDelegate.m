@@ -18,7 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     ViewController * rootVC = [[ViewController alloc]init];
-    self.window.rootViewController = rootVC;
+    UINavigationController * navCtrl = [[UINavigationController alloc]initWithRootViewController:rootVC];
+    self.window.rootViewController = navCtrl;
     [self.window makeKeyAndVisible];
     return YES;
 }
